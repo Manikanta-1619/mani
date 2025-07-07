@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Book Store</title>
+</head>
+<body>
+    <h1>Book Store</h1>
+    <ul>
+        <li>
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81af+MCATTL.jpg" alt="The Great Gatsby" width="100" />
+            <p><strong>The Great Gatsby</strong> by F. Scott Fitzgerald</p>
+        </li>
+        <li>
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71KilybDOoL.jpg" alt="To Kill a Mockingbird" width="100" />
+            <p><strong>To Kill a Mockingbird</strong> by Harper Lee</p>
+        </li>
+        <li>
+            <img src="https://images-na.ssl-images-amazon.com/images/I/91bYsX41DVL.jpg" alt="Harry Potter" width="100" />
+            <p><strong>Harry Potter and the Sorcerer's Stone</strong> by J.K. Rowling</p>
+        </li>
+    </ul>
+</body>
+</html>

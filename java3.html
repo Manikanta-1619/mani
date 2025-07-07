@@ -1,0 +1,613 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Example</title>
+</head>
+<body>
+    <script>
+        let promise = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve("Hello, World!");
+            }, 2000);
+        });
+
+        let consume = async () => {
+            let res = await promise;
+            document.write(res);
+        };
+
+        consume();
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Promise Example</title>
+</head>
+<body>
+    <script>
+        let promise1 = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve("Promise 1: Hello, World!");
+            }, 2000);
+        })
+        let promise2 = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve("Promise 2: How are you?");
+            }, 3000);
+        });
+
+    
+        let promise3 = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve("Promise 3: Goodbye!");
+            }, 4000);
+        });
+
+        
+        let consume = async () => {
+            let res1 = await promise1;
+            document.write(res1 + "<br>");
+
+            let res2 = await promise2;
+            document.write(res2 + "<br>");
+
+            let res3 = await promise3;
+            document.write(res3 + "<br>");
+        };
+
+        consume();
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Promise Example</title>
+</head>
+<body>
+  <script>
+    function getMessage() {
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          resolve("Hello from Promise");
+        }, 2000);
+      });
+    }
+
+    async function printMessage() {
+      const message = await getMessage();
+      console.log(message);
+        document.write(message)
+    }
+
+    printMessage();
+
+
+  </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Promise Example</title>
+</head>
+<body>
+    <script> 
+        getUser = () => {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve("User fetched successfully!");
+                }, 2000);
+            });
+        };
+        getPosts = () => {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve("Posts fetched successfully!");
+                }, 3000);
+            });
+        };
+        
+
+        let consume = async () => {
+            let promise1 = getUser();
+            let promise2 = getPosts();
+
+            
+        
+            let res1 = await promise1;
+            document.write(res1 + "<br>");
+
+            let res2 = await promise2;
+            document.write(res2 + "<br>");
+
+        
+        };
+
+        consume();
+    </script>
+</body>
+</html>
+ -->
+
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        let user = {
+            name:"Manikanta",
+            greet(){
+                console.log("Hello + this.name");
+                return this;
+            },
+            sayGoodbye(){
+                console.log("Goodbye" + this.name);
+                return this;
+            }
+
+        };
+            
+
+        user.greet().sayGoodbye();
+    </script>
+    
+ </body>
+ </html> -->
+
+<!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        let user = {
+            name:"Manikanta",
+            greet(){
+                console.log("Hello + this.name");
+                return this;  
+            },
+            sayGoodbye(){
+                console.log("Goodbye" + this.name);
+                return this;
+            },
+            sayHello(){
+                console.log("Hello again " + this.name);
+                return this;
+            }
+
+        };
+            
+
+        user.greet().sayGoodbye();
+    </script>
+    
+ </body>
+ </html>
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Document</title>
+</head>
+<body>
+   <script>
+      let user = {
+         name: "Manikanta",
+         greet() {
+            console.log("Hello " + this.name);
+            return this;
+         },
+         sayGoodbye() {
+            console.log("Goodbye " + this.name);
+            return this;
+         },
+         sayHello() {
+            console.log("Hello again " + this.name);
+            return this;
+         }
+      };
+        user.greet().sayGoodbye().sayHello();
+      let result = " hello world "
+         .trim()               
+         .toUpperCase()        
+         .replace("HELLO", "HI");
+
+        console.log(result); 
+   </script>
+</body>
+</html>
+ -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Example</title>
+</head>
+<body>
+
+    <select onchange="alert('You selected ' + this.value)">
+        <option value="">Select an option</option>
+        <option value="HTML">HTML</option>
+        <option value="CSS"> CSS</option> 
+        <option value="JAVASCRIPT"> JAVASCRIPT</option>
+    </select>
+
+</body>
+</html>
+
+  -->
+
+<!-- 
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fruit Selector</title>
+</head>
+<body>
+
+  <label for="fruit-select">Choose a fruit:</label>
+  <select id="fruit-select">
+    <option value="">--Please choose an option--</option>
+    <option value="Apple">Apple</option>
+    <option value="Banana">Banana</option>
+    <option value="Cherry">Cherry</option>
+  </select>
+
+  <p id="selected-fruit"></p>
+
+  <script>
+    const select = document.getElementById('fruit-select');
+    const display = document.getElementById('selected-fruit');
+
+    select.addEventListener('change', () => {
+      const fruit = select.value;
+      if(fruit) {
+        display.textContent = `You selected: ${fruit}`;
+      } else {
+        display.textContent = '';
+      }
+    });
+  </script>
+
+</body>
+</html>
+
+ !DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simple Try-Catch Example</title>
+</head>
+<body>
+  <h1>Open the browser console to see the output</h1>
+
+  <script>
+    try {
+      let result = 10 / 2;
+      console.log(result);
+    } catch (error) {
+      console.error("An error occurred:", error);
+    } finally {
+      console.log("This will always run.");
+    }
+  </script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simple Try-Catch Example</title>
+</head>
+<body>
+  <h1>Open the browser console to see the output</h1>
+
+  <script>
+    try {
+      console.log("Start Executed")
+      let result = X*5;
+      console.log("This line will not be executed");
+
+    } catch (error) {
+      console.error(" Caught An error:", error.message);
+    } finally {
+      console.log("This block runs no matter what.");
+    }
+  </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simple Try-Catch Example</title>
+</head>
+<body>
+  <h1>Open the browser console to see the output</h1>
+
+  <script>
+    try {
+      let result = 10 / 2;
+      console.log(result);
+    } catch (error) {
+      console.error("An error occurred:", error);
+    } finally {
+      console.log("This will always run.");
+    }
+  </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creating JSON </title>
+</head>
+<body>
+  <script>
+    let obj1 = {
+      "Key1": "virat",
+      "Key2": "kohli",
+    };
+    //read by using "."dot operator
+    document.write(obj1.Key1 + "<br>");
+    document.write(obj1.Key2 + "<br>");
+    let obj2 = {
+      "Key1": "rohith",
+      "Key2": "sharma",
+    };
+    //read by using "[]"bracket operator
+    //bracket operator is used to read the key which is not a valid identifier  
+    document.write(obj2["Key1"] + "<br>");
+    document.write(obj2["Key2"] + "<br>");
+
+    // read by using desturturing
+    let { Key1, Key2 } = obj3 = {
+      "Key1": "sachin",
+      "Key2": "tendulkar",
+    };
+
+
+    document.write(Key1 + "<br>");
+    document.write(Key2 + "<br>");
+    // read by using for in loop
+    for (let key in obj4 = {
+      "Key1": "ms",
+      "Key2": "dhoni",
+      "Key3": "pat",
+      "Key4": "cummins",
+    }) {
+      document.write(key + ": " + obj4[key] + "<br>");
+    };
+    for (let obj1 in obj2 = {
+      "Key1": "ms",
+      "Key2": "dhoni",
+      "Key3": "pat",
+      "Key4": "cummins",
+    }) {
+      document.write(obj1 + ": " + obj2[obj1] + "<br>");
+    };
+
+
+
+  </script>
+  
+</body>
+</html>
+ -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" id="input" placeholder="Enter value" />
+  <ul  id = "ul"></ul>
+  <button onclick="add()">add</button>
+  <script>
+    function add() {
+      const ul=document.getElementById("ul");
+      const li=document.createElement("li");  
+      const input = document.getElementById("input");
+      li.innerText =input.value;
+      li.style.color = "red";
+      ul.appendChild(li);
+      input.value = ""; 
+    }
+  </script>
+  
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+     let s  = "  hello   "
+     console.log(s)
+      console.log(s.trim()) // removes leading and trailing spaces
+
+      let a = [1,2,3,4,5]
+      console.log(a)
+      console.log(a.length)
+      
+      // length of the array
+    
+      let b = [1,2,3,4,5,6,7,8,9]
+      console.log(b.length)
+      console.log(b[0])
+      console.log(b[8]) 
+      console.log(b[9])
+      console.log(b[10]) 
+      console.log(b[100]) 
+
+  </script>
+
+
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Info Form</title>
+</head>
+<body>
+
+  <h2>User Info Form</h2>
+
+  <form id="userForm">
+    <label>Username:</label>
+    <input type="text" id="username" required><br><br>
+
+    <label>Email:</label>
+    <input type="email" id="email" required><br><br>
+
+    <label>Mobile Number:</label>
+    <input type="tel" id="mobile" required><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <h3>User Details:</h3>
+  <div id="output"></div>
+
+  <script>
+    document.getElementById("userForm").addEventListener("submit", function(event) {
+      event.preventDefault(); 
+
+  
+      let name = document.getElementById("username").value;
+      let email = document.getElementById("email").value;
+      let mobile = document.getElementById("mobile").value;
+
+    
+      let outputDiv = document.getElementById("output");
+      outputDiv.innerHTML = ""; 
+
+      let namePara = document.createElement("p");
+      namePara.textContent = "Username: " + name;
+
+      let emailPara = document.createElement("p");
+      emailPara.textContent = "Email: " + email;
+
+      let mobilePara = document.createElement("p");
+      mobilePara.textContent = "Mobile Number: " + mobile;
+
+    
+      outputDiv.appendChild(namePara);
+      outputDiv.appendChild(emailPara);
+      outputDiv.appendChild(mobilePara);
+    });
+  </script>
+
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+</head>
+<body>
+  <ul id="userlist"></ul>
+  <button onclick="display()">Fetch</button>
+
+  <script>
+    function display() {
+      fetch("https://jsonplaceholder.typicode.com/users")
+        .then(res => res.json())
+        .then(users => {
+          const u = document.getElementById("userlist");
+          u.innerHTML = "";
+
+          users.forEach(user => {
+            const li = document.createElement("li");
+            li.innerText = `${user.name} (${user.email})`;
+            u.appendChild(li);
+          });
+        })
+        .catch(err => {
+          console.error("Error fetching users:", err);
+        });
+    }
+  </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>retreive data in array of objects</title>
+</head>
+<body>
+    <script>
+      let products = [{"pid":111,"pname":"pone","pcost":1000,"pimage":"https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_640/lsci/db/PICTURES/CMS/401600/401683.jpg"},
+                      {"pid":222,"pname":"ptwo","pcost":1000,"pimage":"https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_640/lsci/db/PICTURES/CMS/401600/401683.jpg"},
+                      {"pid":333,"pname":"pthree","pcost":1000,"pimage":"https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_640/lsci/db/PICTURES/CMS/401600/401683.jpg"},
+                      {"pid":444,"pname":"pone","pcost":1000,"pimage":"https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_640/lsci/db/PICTURES/CMS/401600/401683.jpg"},
+                      {"pid":555,"pname":"pone","pcost":1000,"pimage":"https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_640/lsci/db/PICTURES/CMS/401600/401683.jpg"}];
+        document.write(`<table border="1" align="center" cellspacing="10px" cellpadding="10px">
+            <tr>
+            <th>pid</th>
+            <th>pname</th>
+            <th>pcost</th>
+            <th>pimage</th>
+            </tr>
+        `);
+    products.forEach((element,index)=>{
+    document.write(`<tr>
+         <td>${element.pid}</td>
+         <td>${element.pname}</td>
+         <td>${element.pcost}</td>
+         <td>
+            <img src=${element.pimage} width="50px">
+            </td>
+         </tr>`);
+        })
+    </script>
+</body>
+</html>

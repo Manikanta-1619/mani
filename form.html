@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Application Form</title>
+    <title>Create Account</title>
 </head>
 <body>
-<fieldset>
-<legend>
-    <h2>Application Form </h2>
-<legend/>
+    <h2>Create Your Account</h2>
 
     <form action="/register" method="post">
         <label for="username">Username:</label><br>
@@ -37,7 +34,7 @@
 
         <!-- About -->
         <label for="about">About Yourself:</label><br>
-        <textarea id="about" name="about"  placeholder="Tell us something about yourself..." required></textarea><br><br>
+        <textarea id="about" name="about" rows="4" cols="40" placeholder="Tell us something about yourself..." required></textarea><br><br>
 
         <!-- Interests -->
         <label>Interests:</label><br>
@@ -49,7 +46,6 @@
         <label for="music">Music</label>
         <input type="checkbox" id="reading" name="interests" value="Reading">
         <label for="reading">Reading</label><br><br>
-        
 
 
 
@@ -58,6 +54,5 @@
 
         <input type="submit" value="Create Account">
     </form>
-<feildset/>
 </body>
 </html>

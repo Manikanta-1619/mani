@@ -1,0 +1,69 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Box Model</title>
+  
+  <style>
+    p {
+      width: 300px;
+      padding: 20px;
+      margin: 15px;
+      border: 7px solid teal; /* border around paragraph */
+      box-sizing: border-box;
+      display: inline-block;
+      background: linear-gradient(180deg, red, yellow, blue);
+      color: rgb(18, 160, 87); 
+    }
+
+    .heading-in-p {
+      border: 7px solid teal;/* border around the heading */
+      padding: 5px;
+      display: inline-block; /* keep it inline but box-like */
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+    <p>
+    <span class="heading-in-p">HTML and CSS AND JAVA</span>
+
+    Lorean ipsum color slit amet construction of rthe manhim virat kohli under test captain
+    </p>
+  <p>
+    <span class="heading-in-p">Inline Heading inside Paragraph</span>
+    Lorean ipsum color slit amet construction of rthe manhim virat kohli under test captain
+  </p>
+
+  <p>
+    <span class="heading-in-p">Inline Heading inside Paragraph</span>
+    Lorean ipsum color slit amet construction of rthe manhim virat kohli under test captain
+  </p>
+
+  <p>
+    <span class="heading-in-p">Inline Heading inside Paragraph</span>
+    Lorean ipsum color slit amet construction of rthe manhim virat kohli under test captain
+  </p>
+
+  <p>
+    <span class="heading-in-p">Inline Heading inside Paragraph</span>
+    Lorean ipsum color slit amet construction of rthe manhim virat kohli under test captain
+  </p>
+
+  <p>
+    <span class="heading-in-p">Inline Heading inside Paragraph</span>
+    Lorean ipsum color slit amet construction of rthe manhim virat kohli under test captain
+  </p>
+
+  <p>
+    <span class="heading-in-p">Inline Heading inside Paragraph</span>
+    Lorean ipsum color slit amet construction of rthe manhim virat kohli under test captain
+  </p>
+
+  <p>
+    <span class="heading-in-p">Inline Heading inside Paragraph</span>
+    Lorean ipsum color slit amet construction of rthe manhim virat kohli under test captain
+  </p>
+</body>
+</html>

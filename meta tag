@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about HTML meta tags with examples.">
+    <meta name="keywords" content="HTML, meta, SEO, web development">
+    <meta name="author" content="mani ">
+    <meta http-equiv="refresh" content="60">
+    <title>Meta Tags Example</title>
+</head>
+<body>
+    <h1>Understanding HTML Meta Tags</h1>
+    <p> this page demonstrate the use of the meta tag in html</p>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>LocalStorage & SessionStorage Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 400px;
+      margin: auto;
+    }
+    input, button {
+      margin: 5px 0;
+      padding: 8px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .section {
+      margin-bottom: 30px;
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>LocalStorage Demo</h2>
+  <div class="section">
+    <input type="text" id="LocalName" placeholder="Enter name to save in LocalStorage" />
+    <button onclick="saveToLocal()">Save to localStorage</button>
+    <button onclick="showFromLocal()">Show from localStorage</button>
+    <button onclick="clearLocal()">Clear localStorage</button>
+    <p id="localResult"></p>
+  </div>
+
+  <h2>SessionStorage Demo</h2>
+  <div class="section">
+    <input type="text" id="sessionName" placeholder="Enter name to save in sessionStorage" />
+    <button onclick="saveToSession()">Save to sessionStorage</button>
+    <button onclick="showFromSession()">Show from sessionStorage</button>
+    <button onclick="clearSession()">Clear sessionStorage</button>
+    <p id="sessionResult"></p>
+  </div>
+
+  <script>
+    // localStorage functions
+    function saveToLocal() {
+      const name = document.getElementById('localName').value;
+      localStorage.setItem('localUser', name);
+      alert('Saved to localStorage!');
+    }
+
+    function showFromLocal() {
+      const name = localStorage.getItem('localUser');
+      const result = document.getElementById('localResult');
+      if (name) {
+        result.textContent = `localStorage value: ${name}`;
+      } else {
+        result.textContent = 'No data found in localStorage.';
+      }
+    }
+
+    function clearLocal() {
+      localStorage.removeItem('localUser');
+      document.getElementById('localResult').textContent = '';
+      alert('localStorage cleared!');
+    }
+
+    // sessionStorage functions
+    function saveToSession() {
+      const name = document.getElementById('sessionName').value;
+      sessionStorage.setItem('sessionUser', name);
+      alert('Saved to sessionStorage!');
+    }
+
+    function showFromSession() {
+      const name = sessionStorage.getItem('sessionUser');
+      const result = document.getElementById('sessionResult');
+      if (name) {
+        result.textContent = `sessionStorage value: ${name}`;
+      } else {
+        result.textContent = 'No data found in sessionStorage.';
+      }
+    }
+
+    function clearSession() {
+      sessionStorage.removeItem('sessionUser');
+      document.getElementById('sessionResult').textContent = '';
+      alert('sessionStorage cleared!');
+    }
+  </script>
+  
+</body>
+</html>

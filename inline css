@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>selector</title>
+</head>
+<body>
+    
+
+  <h2 style="color: blue; text-align: center;">Welcome to My Page</h2>
+
+  <p style="color: darkgreen; font-size: 18px;">This paragraph uses an inline style instead of an ID selector.</p>
+
+  <p style="background-color: yellow; font-weight: bold;">This paragraph uses an inline style instead of a class selector.</p>
+
+  <p>This paragraph uses no inline style.</p>
+
+</body>
+</html>

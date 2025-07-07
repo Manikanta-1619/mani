@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Image Index Table</title>
+  <style>
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      font-family: Arial, sans-serif;
+    }
+    th, td {
+      border: 1px solid #999;
+      padding: 10px;
+      text-align: center;
+    }
+    img {
+      width: 150px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 style="text-align:center;">Image Index Table</h2>
+  <table id="imageTable">
+    <thead>
+      <tr>
+        <th>Index</th>
+        <th>Image</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Image rows will be inserted here by JavaScript -->
+    </tbody>
+  </table>
+
+  <script>
+    // Array of image objects
+    const imageData = [
+      { index: 0, url: 'https://via.placeholder.com/150x100?text=Image+1', description: 'Ocean sunrise' },
+      { index: 1, url: 'https://via.placeholder.com/150x100?text=Image+2', description: 'Hiking trail' },
+      { index: 2, url: 'https://via.placeholder.com/150x100?text=Image+3', description: 'Desert dunes' }
+    ];
+
+    // Get the tbody element of the table
+    const tableBody = document.querySelector('#imageTable tbody');
+
+    // Add each image object as a new row
+    imageData.forEach(image => {
+      const row = document.createElement('tr');
+      row.innerHTML = `
+        <td>${image.index}</td>
+        <td><img src="${image.url}" alt="Image ${image.index}" /></td>
+        <td>${image.description}</td>
+      `;
+      tableBody.appendChild(row);
+    });
+  </script>
+
+</body>
+</html>
+https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_640/lsci/db/PICTURES/CMS/401600/401683.jpg

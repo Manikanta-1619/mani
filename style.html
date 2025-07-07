@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>All CSS Styles Example</title>
+
+  <!-- Simulated external CSS (would normally be in a separate .css file) -->
+  <link rel="stylesheet" href="styles.css"> <!-- This is how you'd link external CSS -->
+
+  <!-- Internal CSS -->
+  <style>
+    /* Element selector */
+    h2 {
+      color: blue;
+      text-align: center;
+    }
+
+    /* ID selector */
+    #main-paragraph {
+      color: darkgreen;
+      font-size: 18px;
+    }
+
+    /* Class selector */
+    .highlight {
+      background-color: yellow;
+      font-weight: bold;
+    }
+
+    /* External styles would go in styles.css, e.g.:
+      body {
+        font-family: Arial, sans-serif;
+      }
+    */
+  </style>
+</head>
+<body>
+
+  <!-- Inline style overrides internal and external -->
+  <h2 style="color: red;">Welcome to My Page</h2>
+
+  <!-- ID selector will apply internal CSS -->
+  <p id="main-paragraph">This paragraph uses an ID selector.</p>
+
+  <!-- Class selector will apply internal CSS -->
+  <p class="highlight">This paragraph uses a class selector.</p>
+
+  <!-- This uses inline CSS -->
+  <p style="font-style: italic; color: gray;">This paragraph uses inline CSS.</p>
+
+  <!-- No styles applied -->
+  <p>This paragraph uses no class, ID, or inline style.</p>
+
+</body>
+</html>

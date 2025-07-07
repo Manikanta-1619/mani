@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Styled Resume</title>
+  <style>
+    /* === Global Styles === */
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      color: #333;
+      line-height: 1.5;
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1, h2, h3 {
+      margin-bottom: 0.25rem;
+      color: #2a3d66;
+    }
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.6rem; border-bottom: 2px solid #eee; padding-bottom: 0.3rem; }
+    h3 { font-size: 1.2rem; }
+
+    .contact {
+      margin-bottom: 2rem;
+      font-size: 0.9rem;
+    }
+    .contact span {
+      margin-right: 1.5rem;
+    }
+
+    section {
+      margin-bottom: 1.8rem;
+    }
+    .item {
+      margin-bottom: 1.2rem;
+    }
+
+    .item h3 {
+      margin: 0;
+      font-weight: 600;
+    }
+    .item .meta {
+      font-style: italic;
+      color: #666;
+      font-size: 0.9rem;
+      margin-bottom: 0.3rem;
+    }
+    ul {
+      margin: 0.4rem 0 0 1.2rem;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 0.4rem;
+    }
+
+    /* Sidebar / Skills panel */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .skills span {
+      background: #f0f4fb;
+      color: #2a3d66;
+      padding: 0.3rem 0.6rem;
+      border-radius: 3px;
+      font-size: 0.85rem;
+    }
+
+    /* Print‑friendly */
+    @media print {
+      body {
+        color: #000;
+      }
+      h2 {
+        border-color: #000;
+      }
+      .skills span {
+        background: none;
+        color: #000;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Your Name</h1>
+  <div class="contact">
+    <span>Email: you@example.com</span>
+    <span>Phone: +91‑12345‑67890</span>
+    <span>LinkedIn: linkedin.com/in/yourname</span>
+  </div>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="item">
+      <h3>Senior Software Engineer — Company XYZ</h3>
+      <div class="meta">Jan 2021 – Present</div>
+      <ul>
+        <li>Led development of a scalable microservices architecture using Node.js and Kubernetes.</li>
+        <li>Improved application performance by 40% and reduced infrastructure cost by 30%.</li>
+      </ul>
+    </div>
+    <div class="item">
+      <h3>Software Engineer — Company ABC</h3>
+      <div class="meta">Jun 2018 – Dec 2020</div>
+      <ul>
+        <li>Implemented key features using React and Redux; collaborated with UX team for redesign.</li>
+        <li>Enhanced CI/CD pipelines, reducing deployment time from 2 hours to 15 minutes.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="item">
+      <h3>B.Tech in Computer Science — University of Example</h3>
+      <div class="meta">Aug 2014 – May 2018</div>
+      <ul>
+        <li>Graduated with distinction; GPA: 8.6/10.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>JavaScript</span><span>Node.js</span><span>React</span>
+      <span>Kubernetes</span><span>Docker</span><span>TypeScript</span>
+      <span>SQL</span><span>Git</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="item">
+      <h3>Open‑Source Library: LibTool</h3>
+      <div class="meta">2023</div>
+      <ul>
+        <li>Developed a modular TS library for data validation used by 500+ developers.</li>
+      </ul>
+    </div>
+    <div class="item">
+      <h3>Portfolio Website</h3>
+      <div class="meta">2022</div>
+      <ul>
+        <li>Built responsive portfolio using React, styled-components, deployed on Netlify.</li>
+      </ul>
+    </div>
+  </section>
+</body>
+</html>

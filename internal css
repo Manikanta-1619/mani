@@ -1,0 +1,28 @@
+           
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* # = ID selector */
+    #title {
+      color: red;
+      font-size: 26px;
+    }
+
+    /* . = Class selector */
+    .star {
+      color: orange;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 id="title">Hello World!</h2>
+  <p>This is a normal paragraph.</p>
+  <p class="star">★ This paragraph has a star class and is orange!</p>
+
+  <h3> MANI </h3>ct
+
+</body>
+</html>

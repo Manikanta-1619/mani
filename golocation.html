@@ -1,0 +1,12 @@
+function getloc(){
+    if(navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else {
+        console.log("not supported");
+    }
+}
+function showPosition(position){
+    let lat=position.coords.latitude;
+    let lon=position.coords.longitude;
+    console.log("Latitude: " + lat + ", Longitude: " + lon);
+    document.getElementById("p1").innerHTML = "Latitude: " + la

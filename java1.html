@@ -1,0 +1,151 @@
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Student List</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        #container {
+            background-color: #ffffff;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            max-width: 500px;
+            margin: auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            width: 250px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        ul {
+            margin-top: 20px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="container">
+        <h2>Enter Student Name</h2>
+        <input type="text" id="studentInput" placeholder="Student Name" />
+        <button onclick="addStudent()">Add Student</button>
+
+        <ul id="studentList">
+        
+        </ul>
+    </div>
+
+    <script>
+        function addStudent() {
+            const input = document.getElementById('studentInput');
+            const name = input.value.trim();
+
+            if (name !== "") {
+                const list = document.getElementById('studentList');
+
+                
+                const listItem = document.createElement('li');
+                listItem.textContent = name;
+
+            
+                list.appendChild(listItem);
+
+                
+                input.value = "";
+            } else {
+                alert("Please enter a student name.");
+            }
+        }
+    </script>
+
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Button Events Example</title>
+</head>
+<body>
+
+    <button 
+        onclick="clickAction()" 
+        onmouseover="mouseOverAction()"
+    >
+        Click or Hover Me
+    </button>
+
+    <script>
+        // Function runs when button is clicked
+        function clickAction() {
+            alert("Button was clicked!");
+        }
+
+        // Function runs when mouse is moved over the button
+        function mouseOverAction() {
+            console.log("Mouse is over the button!");
+        }
+    </script>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>This message will appear immediately.</p>
+
+    <script>
+        // Append content safely without overwriting the entire document
+        setTimeout(() => {
+            // Append delayed message
+            const p = document.createElement('p');
+            p.textContent = "This is a delayed message.";
+            document.body.appendChild(p);
+        }, 2000);
+
+        function showMessage() {
+            const p = document.createElement('p');
+            p.textContent = "This message appears after 3 seconds.";
+            document.body.appendChild(p);
+        }
+        setTimeout(showMessage, 3000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Demo</title>
+
+</head>
+<body>
+    <h1>Pricing table</h1>
+
+ <table border="1"
+  <tr>
+    <th>plan</th>
+    <th>price</th>
+    <th>features</th>
+    <th>data</th>
+  </tr>
+<tr>
+     <th>S.NO</th>
+    <th>NAME</th>
+  </tr>
+<tr>
+
+    
+<table/>
+<body/>
+<html/>
+
+
